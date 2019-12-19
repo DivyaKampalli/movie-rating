@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content_block %}
+    <table>
+        <tr>
+            <th>Movie Name</th>
+            <th>My Rating </th>
+        </tr>
+    {% for movie in movies %}
+       <tr>
+           <td> {{movie.name}} </td>
+           <td class="rating_cell"> {{movie.rating}} </td>
+       </tr>
+    {% endfor %}
+    </table>
+{% endblock %}

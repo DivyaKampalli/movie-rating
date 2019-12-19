@@ -1,12 +1,12 @@
-from flask import Flask, request, escape, jsonify
+from flask import Flask, request, jsonify, render_template
 from moviedb import MovieDB
 
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-    movies = MovieDB("./moviedb.json")
-    return jsonify(movies.get_movies())
+    moviedb = MovieDB("./moviedb.json")    
+    return render_template('movies.html', movies = moviedb.get_movies())
     
 
 @app.route('/movie/<int:movie_id>', methods=['GET'])
