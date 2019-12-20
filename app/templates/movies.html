@@ -7,7 +7,7 @@
             <th>My Rating </th>
         </tr>
     {% for movie in movies %}
-       <tr>
+       <tr id= {{movie.id}}>
            <td> {{movie.name}} </td>
            <td class="rating_cell"> {{movie.rating}} </td>
        </tr>
