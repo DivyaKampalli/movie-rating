@@ -1,5 +1,39 @@
-* {
-    margin: 0;
-    padding: 0;
-    background-color: burlywood;
+html{
+    background-color: black;
+    font-family: 'Sunflower';
 }
+table {
+    table-layout: fixed;
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr th:nth-child(1){
+    width: 70%;
+}
+
+tr th:nth-child(2){
+    width: 30%;
+}
+
+th, td {
+    font-family: 'Sunflower';
+    padding: 20px;
+    text-align: center;
+  }
+
+  th {
+      letter-spacing: 2px;
+      font-size: 22px;
+      background-color:lightsalmon;
+      background-image: linear-gradient(lightsalmon, white);
+  }
+
+  td {
+      font-size: 18px;
+      letter-spacing: 1px;
+      background-color:skyblue;
+      background-image: linear-gradient(skyblue, white);
+  }
